@@ -1,0 +1,23 @@
+INSERT INTO `usuarios`(`nombre`, `apellido`, `clave`, `perfil`, `estado`) VALUES ('Gonzalo','Requeni','asd123',1,1)
+
+UPDATE `usuarios` SET `nombre`='Gonzalo_m',`apellido`='Requeni_m',`clave`='asd1234',`perfil`=2,`estado`=0 WHERE `id` = 1
+
+SELECT `id`, `nombre`, `apellido`, `clave`, `perfil`, `estado` FROM `usuarios` WHERE `id`=1
+
+SELECT `id`, `nombre`, `apellido`, `clave`, `perfil`, `estado` FROM `usuarios` WHERE `estado`=1
+
+SELECT `id`, `nombre`, `apellido`, `clave`, `perfil`, `estado` FROM `usuarios` WHERE 1
+
+DELETE FROM `usuarios` WHERE `id`=1
+
+
+
+INSERT INTO `productos`(`codigo_barra`, `nombre`, `path_foto`) VALUES ('54321','Pepsi',null)
+
+UPDATE `productos` SET `codigo_barra`='12345',`nombre`='Coca-Cola',`path_foto`='foto.jpg' WHERE `id`=1
+
+SELECT `id`, `codigo_barra`, `nombre`, `path_foto` FROM `productos` WHERE `id`=1
+
+SELECT `id`, `codigo_barra`, `nombre`, `path_foto` FROM `productos` WHERE 1
+
+DELETE FROM `productos` WHERE `id`=1
